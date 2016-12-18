@@ -3,7 +3,7 @@ source("readTable.R")  ##Read data from table
 
 png("plot4.png") ##Create png file & draw chart.
 
-par(mfcol=c(2,2),mar=c(4,3,2,1)) ## set device to display 2x2 charts; resize margin.
+par(mfcol=c(2,2),mar=c(4,4,1,3),oma=c(0,0,0,0)) ## set device to display 2x2 charts; resize margin.
 
 ##1st Chart
 with(DT2,plot(Time,Global_active_power,xlab=NA,ylab="Global Active power",type="l"))
